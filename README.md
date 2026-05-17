@@ -43,6 +43,8 @@ Here's a walkthrough of implemented required features:
 
 ![Creatorverse demo walkthrough](demo.gif)
 
+GIF created with macOS Screen Recording and Adobe Express.
+
 ## Tech Stack
 
 - **React** + **Vite** (with `react-router-dom` for client-side routing)
