@@ -1,0 +1,359 @@
+body {
+  background: #0b1426;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hero-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 36, 0.55) 0%, rgba(8, 14, 36, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-header-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.hero-header h1 {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 11vw, 9rem);
+  letter-spacing: -0.02em;
+  color: white;
+  margin: 0 0 3rem;
+  line-height: 1;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-actions a[role='button'] {
+  margin: 0;
+  padding: 1.1rem 2.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(100, 210, 255, 0.35) 0%,
+    rgba(10, 132, 255, 0.45) 100%
+  );
+  border: 1px solid rgba(100, 210, 255, 0.5);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  box-shadow:
+    inset 0 1px 0 rgba(180, 230, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 50, 120, 0.25),
+    0 8px 24px rgba(10, 132, 255, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-actions a[role='button']:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(140, 220, 255, 0.5) 0%,
+    rgba(30, 144, 255, 0.6) 100%
+  );
+  border-color: rgba(140, 220, 255, 0.7);
+}
+
+/* ── Apple sky-blue glass buttons ───────────────────── */
+button,
+a[role='button'] {
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(100, 210, 255, 0.22) 0%,
+    rgba(10, 132, 255, 0.3) 100%
+  );
+  border: 1px solid rgba(100, 210, 255, 0.35);
+  color: white;
+  backdrop-filter: blur(18px) saturate(200%);
+  -webkit-backdrop-filter: blur(18px) saturate(200%);
+  box-shadow:
+    inset 0 1px 0 rgba(180, 230, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 50, 120, 0.2),
+    0 4px 14px rgba(10, 132, 255, 0.25);
+  transition: transform 0.18s ease, background 0.18s ease,
+    box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+button:hover,
+a[role='button']:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(140, 220, 255, 0.35) 0%,
+    rgba(30, 144, 255, 0.45) 100%
+  );
+  border-color: rgba(140, 220, 255, 0.55);
+}
+
+button:active,
+a[role='button']:active {
+  background: linear-gradient(
+    180deg,
+    rgba(80, 180, 230, 0.25) 0%,
+    rgba(10, 100, 200, 0.35) 100%
+  );
+}
+
+button.secondary,
+a[role='button'].secondary,
+button[type='button'].secondary {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: none;
+}
+
+button.secondary:hover,
+a[role='button'].secondary:hover {
+  background: rgba(255, 90, 95, 0.2);
+  border-color: rgba(255, 90, 95, 0.4);
+  color: white;
+  box-shadow: 0 4px 14px rgba(255, 90, 95, 0.25);
+}
+
+.mini-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mini-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: white;
+}
+
+.app-footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-head h2 {
+  margin-bottom: 0.25rem;
+}
+
+.section-head p {
+  color: var(--pico-muted-color);
+  margin: 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.empty-state h3 {
+  color: #6d8cb8;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.empty-state p {
+  display: none;
+}
+
+.empty-state a {
+  margin-top: 1.5rem;
+}
+
+.creators {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card > p {
+  margin: 0 0 0.75rem;
+}
+
+.card > a {
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--pico-border-radius);
+}
+
+.card-placeholder {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, #6d8cb8, #4a6a8f);
+  border-radius: var(--pico-border-radius);
+  user-select: none;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.card-actions a {
+  flex: 1;
+}
+
+.card-actions button {
+  margin: 0;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+.socials a:hover {
+  transform: scale(1.15);
+}
+
+.view-socials {
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+
+.view-socials a {
+  font-size: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.view-socials a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: none;
+}
+
+.social-field span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+}
+
+.social-field span svg {
+  font-size: 1.15rem;
+}
+
+.form-page {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: var(--pico-muted-color);
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--pico-color);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.form-actions button,
+.form-actions a[role='button'] {
+  margin: 0;
+}
