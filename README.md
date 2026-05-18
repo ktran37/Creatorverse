@@ -41,9 +41,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Creatorverse demo walkthrough](demo.gif)
+![Creatorverse demo walkthrough](demo.mov)
 
-GIF created with macOS Screen Recording and Adobe Express.
+GIF created with macOS Screen Recording.
 
 ## Tech Stack
 
