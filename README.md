@@ -41,7 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Creatorverse demo walkthrough](demo.mp4)
+![Creatorverse demo walkthrough](demo.gif)
 
 GIF created with macOS Screen Recording.
 
